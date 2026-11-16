@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Moje gry | ZanteBoxd</title>
+        <link href="./style.css" rel="stylesheet" />
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a class="logo" href="index.html">ZanteBoxd</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="games.html" class="active">Moje gry</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1>Moje gry</h1>
+                <p>Moje ulubione tytuły. Wybierz gatunek, żeby zawęzić listę.</p>
+                <div class="filters">
+                    <button class="filter_button selected" type="button" data-filter="wszystkie">Wszystkie</button>
+                    <button class="filter_button" type="button" data-filter="platformowki">Platformówki</button>
+                    <button class="filter_button" type="button" data-filter="rpg">RPG</button>
+                    <button class="filter_button" type="button" data-filter="mystery">Narrative Mystery</button>
+                </div>
+                <div class="image_gallery">
+                    <figure class="card_gallery" data-genre="platformowki">
+                        <img src="images/hollowknight.jpg" alt="Hollow Knight poster" width="600" height="400" />
+                        <figcaption>
+                            <h3>Hollow Knight</h3>
+                            <p>Klasyczna metroidvania. Niezapominalny soundtrack, artstyle i bossy. Klasyka wśród gier indie</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card_gallery" data-genre="platformowki">
+                        <img src="images/silksong.jpg" alt="Hollow Knight: Silksong poster" width="600" height="400" />
+                        <figcaption>
+                            <h3>Hollow Knight: Silksong</h3>
+                            <p>Sequel do Hollow Knighta. Większy, bardziej rozbudowany, więcej detali. Trudno wybrać, która wersja jest rzeczywiście lepsza, ale jeżeli lubisz oryginał, sequel na pewno nie zawodzi</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card_gallery" data-genre="platformowki">
+                        <img src="images/celeste.jpg" alt="Celeste poster" width="600" height="400" />
+                        <figcaption>
+                            <h3>Celeste</h3>
+                            <p>Najbardziej wymagająca gra na liście, ale też jedna z bardziej satysfakcjonujących. Soundtrack 8-bit, grafika pixelowa budują super klimat. Jeden z bardziej rozbudowanych systemów movementu wśród platformówek 2d i zaskakująco dotykająca historia</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card_gallery" data-genre="rpg">
+                        <img src="images/wutheringwaves.jpg " alt="Wuthering Waves poster" width="600" height="400" />
+                        <figcaption>
+                            <h3>Wuthering Waves</h3>
+                            <p>Gra gacha, co może wielu zniechęcić. Pod tym skrywa się jednak świat z niesamowicie głęboką historią, wieloma niesamowitymi postaciami, bardzo rozbudowany, systemem walki i budowania postaci, pięknymi grafikami i soundtrackiem. A co najlepsze? Gra jest live-service więc dostaje regularnie nowe updaty i kontent. Jeżeli szukasz gry w której zawsze będzie co robić, to jest gra dla ciebie</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card_gallery" data-genre="rpg">
+                        <img src="images/cyberpunk.jpg" alt="Cyberpunk2077 poster" width="600" height="400" />
+                        <figcaption>
+                            <h3>Cyberpunk 2077</h3>
+                            <p>Chyba nie trzeba nikomu przedstawiać, ale zdecydowanie mój ulubiony open world. Eksploracja Night City nigdy się nie nudzi, side questy klasycznie w stylu CDPR dodają światu niesamowitej głębi, a historia serio zostawia wrażenie. W night city nie ma szczęśliwych zakończeń</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card_gallery" data-genre="rpg">
+                        <img src="images/persona4.jpg" alt="p4g poster" width="600" height="400" />
+                        <figcaption>
+                            <h3>Persona 4 Golden</h3>
+                            <p>Jrpg od firmy Atlus. Najlepszy zbiór postaci na tej liście. Gra jest długa ale godziny w niej wydają sie jak minuty. Tutaj możnaby tak naprawdę dać którąkolwiek persone, wszystkie są super</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card_gallery" data-genre="rpg">
+                        <img src="images/nier.jpg" alt="NieR:Automata poster" width="600" height="400" />
+                        <figcaption>
+                            <h3>NieR:Automata</h3>
+                            <p>Gra która chyba najlepiej integruje gameplay z historią, którą opowiada. Zagrasz w to i uznasz, że właśnie tak powinno się wykorzystywać możliwośći jakie dają gry komputerowe</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card_gallery" data-genre="mystery">
+                        <img src="images/outerwilds.jpg" alt="Outer Wilds poster" width="600" height="400" />
+                        <figcaption>
+                            <h3>Outer Wilds</h3>
+                            <p>Gra o której ciężko coś powiedzieć bez zaspoilerowania. Gre da się skończyć tak na prawdę od razu po odpaleniu i na tym polega jej piękno. Jedyne co cie ogranicza to twoja wiedza, którą zdobywasz przez eksplorowanie świata</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card_gallery" data-genre="mystery">
+                        <img src="images/firewatch.jpg" alt="Firewatch poster" width="600" height="400" />
+                        <figcaption>
+                            <h3>Firewatch</h3>
+                            <p>Najbardziej klimatyczna gra na liście, krótka ale przez cały czas będziesz w napięciu. Mistrzostwo pod względem narracyjnym</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section>
+                <h2>STEAL DEAL - gra, której nie mogę się doczekać</h2>
+                <video controls aria-label="Zwiastun gry Steal Deal">
+                    <source src="images/sd_trailer.mp4" type="video/mp4"/>
+                    Twoja przeglądarka nie obsługuje odtwarzania wideo.
+                    <a href="images/sd_trailer.mp4">Pobierz zwiastun</a>.
+                </video>
+            </section>
+        </main>
+        <footer>
+            <p>© 2026 Aleksander Kołuda</p>
+        </footer>
+    </body>
+</html>

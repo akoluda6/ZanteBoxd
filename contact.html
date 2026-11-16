@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, , initial-scale=1" />
+        <title>Kontakt | ZanteBoxd</title>
+        <link href="./style.css" rel="stylesheet" />
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a class="logo" href="index.html">ZanteBoxd</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="games.html">Moje gry</a></li>
+                    <li><a href="contact.html" class="active">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="contact_page">
+                <div class="contact_text">
+                    <h1>Napisz do mnie</h1>
+                    <p>Masz grę, którą muszę przetestować, chcesz zagrać razem, albo masz do mnie inną sprawę? Wypełnij formularz.</p>
+                </div>
+                <form class="form_contact" id="contact_form" action="#" method="post">
+                    <label for="email">Adres e-mail</label>
+                    <input type="email" id="email" name="email" placeholder="np. gracz@example.com" required />
+
+                    <label for="topic">Temat</label>
+                    <select id="topic" name="topic" required>
+                        <option value="">Wybierz temat</option>
+                        <option>Polecenie gry</option>
+                        <option>Wspólna rozgrywka</option>
+                        <option>Pytanie o stronę</option>
+                        <option>Inne</option>
+                    </select>
+
+                    <label for="message">Wiadomość</label>
+                    <textarea id="message" name="message" rows="6" minlength="10" maxlength="500" placeholder="W co ostatnio grasz?" required></textarea>
+
+                    <button class="button" type="submit">Wyślij wiadomość</button>
+                    <p id="form_status"></p>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>© 2026 Aleksander Kołuda</p>
+        </footer>
+    </body>
+</html>
